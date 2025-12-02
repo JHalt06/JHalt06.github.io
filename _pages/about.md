@@ -7,9 +7,9 @@ subtitle: "Make time for adventure."
 profile:
   align: right
   image: temp_prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Cell: (716)400-0023</p>
+    <p>Cell: (716) 400-0023</p>
     <p>Email: jgh2906@rit.edu</p>
 #    <p></p>
 

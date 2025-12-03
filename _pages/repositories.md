@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description:
+description: On this page are some of the project repositories I'm most proud to have worked on.
 nav: true
 nav_order: 4
 ---

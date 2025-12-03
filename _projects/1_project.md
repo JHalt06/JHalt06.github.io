@@ -22,7 +22,7 @@ The project showcases our work across the full development cycle inluding requir
 
 This platform was developed collaboratively using Agile methods, including sprint planning, backlog management, version control with Git, and continuous team coordination.
 ---
-<div class="row">
+<!-- <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -32,8 +32,8 @@ This platform was developed collaboratively using Agile methods, including sprin
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-<div class="caption">
+</div> -->
+<!-- <div class="caption">
     Import design documents from the project: 
 </div>
 <div class="row">
@@ -43,7 +43,7 @@ This platform was developed collaboratively using Agile methods, including sprin
 </div>
 <div class="caption">
     Our sprint board helped with sprint planning, tracking progress, assigning tasks, and evolving project requirements.
-</div>
+</div> -->
 
 Between development milestones, we documented decisions, analyzed code impacts, and applied object-oriented software engineering principles such as the Single Responsibility Principle, Open/Close principle, Low Coupling, and Information Expert.
 

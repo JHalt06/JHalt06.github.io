@@ -404,7 +404,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-books-for-the-future",
           title: 'Books for the Future',
-          description: "Class group project for SWEN-261",
+          description: "Class group project for SWEN-261.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-symposium-notes",

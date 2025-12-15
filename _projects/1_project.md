@@ -60,7 +60,7 @@ The main entities and relationships of the project:
 5. Cupboard: Needs posted by Managers available for Helpers to browse, checkout, etc.
 
 ## Architecture and Design
-![The Tiers & Layers of the Architecture](architecture-tiers-and-layers.png)
+![The Tiers & Layers of the Architecture]( architecture-tiers-and-layers.png)
 
 The web application, is built using the Model–View–ViewModel (MVVM) architecture pattern. 
 

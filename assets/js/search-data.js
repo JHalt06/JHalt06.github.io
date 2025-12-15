@@ -404,7 +404,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-books-for-the-future",
           title: 'Books for the Future',
-          description: "Class group project for SWEN-261.",
+          description: "This project is a web-based platform for managing school supplies and school supplies needs efficiently. It supports helpers by organizing and tracking items (Needs) for through a centralized system. The goal is to streamline school supply allocation, prevent errors, and provide visibility into available and required supplies.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-symposium-notes",

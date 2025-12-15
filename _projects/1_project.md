@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Books for the Future
-description: Class group project for SWEN-261.
+description: This project is a web-based platform for managing school supplies and school supplies needs efficiently. It supports helpers by organizing and tracking items (Needs) for through a centralized system. The goal is to streamline school supply allocation, prevent errors, and provide visibility into available and required supplies.
 img: assets/img/12.jpg
 importance: 1
 category: work
@@ -19,31 +19,60 @@ The project showcases our work across the full development cycle inluding requir
 - A scalable multi-tier architecture following established design principles
 - Comprehensive developer documentation and diagrams
 
+The MVP of this project:
+1. User management
+2. User login capability
+2. Creation, viewing, and management of school supplies basket (Funding baskets)
+3. Finalization to lock completed baskets. 
+4. Interface that allows for smooth navigation and interaction. 
+
+## MVP Features
+
+1. Admin Login (5) - As a U-fund Manager, I want to log in using the reserved username admin so that I can manage the organization's needs cupboard.
+
+2. Helper Login (8) - As a Helper I want to login to the UFund app so that I can access the needs cupboard and view my basket.
+
+3. Search Needs in cupboard (8) - As a Helper I want to search for a particular need so that I can easily find what things exist or do not exist.
+
+4. Create New Need (8) - As a Manager/Admin I want to submit a request to create a new need so that it is added to the cupboard.
+
+5. Edit an Existing Need(5) - As a Helper I want to edit the details of an existing need in the cupboard 
+
+6. Remove Needs from Cupboard(5) - As a Helper I want to add/remove needs from my funding basket so that I can change the status of available needs.
+
+7. Browse Needs (5) - As a Helper I want to see a list of needs so that I choose which ones to contribute to.
+
+8. Checkout Needs(5) - As a Helper I want to add/remove needs from my funding basket so that I can change the status of available needs.
+
+9. Populate Cupboard - As a Helper I want to add needs from my funding basket so that I can change the status of available needs.
+
+10. Modify Funding Basket(5) - As a Helper I want to review all the needs currently in my funding basket so that I can confirm, update, or remove them before finalizing their status.
+
+
+## Application Domain
+![Domain Model](domainmodels4.png)
+
+The main entities and relationships of the project:
+1. Helper: Primary user, can manage their own basket and Needs.
+2. Funding Basket: Group of needs asscoiated with a helper.
+3. Need: Individual resource item with description, quantity, and other metadata.
+4. Manager: Admin user, can modify current needs in the Cupboard, or create new ones. Has access to updated information about the initiative (# of needs, users, etc).
+5. Cupboard: Needs posted by Managers available for Helpers to browse, checkout, etc.
+
+## Architecture and Design
+![The Tiers & Layers of the Architecture](architecture-tiers-and-layers.png)
+
+The web application, is built using the Model–View–ViewModel (MVVM) architecture pattern. 
+
+The Model stores the application data objects including any functionality to provide persistance. 
+
+The View is the client-side SPA built with Angular utilizing HTML, CSS and TypeScript. The ViewModel provides RESTful APIs to the client (View) as well as any logic required to manipulate the data objects from the Model.
+
+### View Tier
+![Add Need Diagram](Sprint4-AddNeedToBasket-SequenceDiagram.drawio.png)
+![Enter Search Diagram](SequenceDiagramViewModel.png)
 
 This platform was developed collaboratively using Agile methods, including sprint planning, backlog management, version control with Git, and continuous team coordination.
----
-<!-- <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div> -->
-<!-- <div class="caption">
-    Import design documents from the project: 
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Our sprint board helped with sprint planning, tracking progress, assigning tasks, and evolving project requirements.
-</div> -->
 
 Between development milestones, we documented decisions, analyzed code impacts, and applied object-oriented software engineering principles such as the Single Responsibility Principle, Open/Close principle, Low Coupling, and Information Expert.
 
@@ -81,6 +110,7 @@ After weeks of building, testing, and refining, we produced a functioning protot
 We used multiple technologies and methods:
 
 - **Java** as the primary language  
+- **Spring Boot** as the Java framework
 - **Model–View–Controller (MVC)** architecture  
 - **Git & GitHub** workflow with feature branches  
 - **Agile sprints**, retrospective evaluations, and task-driven planning  

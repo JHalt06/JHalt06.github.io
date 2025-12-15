@@ -407,6 +407,11 @@ ninja.data = [{
           description: "This project is a web-based platform for managing school supplies and school supplies needs efficiently. It supports helpers by organizing and tracking items (Needs) for through a centralized system. The goal is to streamline school supply allocation, prevent errors, and provide visibility into available and required supplies.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-project-1",
+          title: 'project 1',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{id: "projects-symposium-notes",
           title: 'Symposium Notes',
           description: "Imagine never having to take notes again. Symposium Notes is your AI-powered assistant that records, transcribes, and summarizes your lectures, meetings allowing you to pay full attention.",
